@@ -7,7 +7,7 @@
 //     console.log("Неверно :(")
 // }
 
-let num = 50;
+/*let num = 50;
 if (num < 49) {
     console.log("Неверно!")
 } else if (num > 100) {
@@ -34,4 +34,42 @@ switch (num) {
     default:
         console.log("Что то не так :(");
         break;
+}
+*/
+
+//ЦИКЛЫ
+
+var num = 50;
+//Цикл while - сначала проверяем, потом что то делаем
+// while (num < 55) {
+//     console.log(num);
+//     num++;
+// }
+
+//Цикл do - сначала делаем что то, потом проверяем
+do {
+    console.log(num);
+    num++;
+}
+while (num < 55);
+
+//Цикл for
+// for (let i = 1; i <= 5; i++) {
+//     console.log(i);
+// }
+
+// //Цикл for с остановкой после i=6
+// for (let i = 1; i < 8; i++) {
+//     if (i == 6) {
+//         break; //прерывание
+//     }
+//     console.log(i);
+// }
+
+//Цикл for с пррерыванием и продолжением i=6 будет пропущен
+for (let i = 1; i < 8; i++) {
+    if (i == 6) {
+        continue; //продолжение после 6
+    }
+    console.log(i);
 }
